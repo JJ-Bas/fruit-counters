@@ -1,4 +1,85 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border-style: none;
+}
+
+:root {
+    --lightblue: hsl(193, 50%, 77%);
+    --orange: hsl(37, 95%, 55%);
+    --mustard: hsl(46, 100%, 64%);
+    --lightgreen: hsl(96, 50%, 37%);
+    --darkgreen: hsl(121, 64%, 17%);
+}
+
+h1 {
+    color: var(--orange);
+    margin:20px;:Q
+}
+.outer-container {
+    display: flex;
+    justify-content: center;
+}
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+body {
+    background-color: var(--lightblue);
+}
+
 .counter {
-    border-style: solid;
-    border-color: green;
+    display: flex;
+    width: 300px;
+    margin: 5px
+}
+
+.counter label {
+    width: 80px;
+}
+
+.counter button {
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.customer-form-outer {
+    border-radius: 14px;
+    background-color: var(--mustard);
+    width: 700px;
+    height: 400px;
+}
+.customer-form {
+    width: 700px;
+    height: 400px;
+}
+
+.fruit-form {
+    border-radius: 14px;
+    background-color: var(--orange);
+    width: 700px;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+#fruit-form-reset {
+    width: 90px;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.label-span {
+    padding: 4px;
+    display: flex;
 }
